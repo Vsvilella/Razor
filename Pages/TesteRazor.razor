@@ -1,3 +1,11 @@
 @page "/testeRazor"
 
-<h1>@Math.Pow(2, 3) Teste Razor</h1>
+@{
+    var obj = new Aluno{
+        Matricula = 123,
+        Nome = "vinicius",
+        Email = "vinicius.vilella@gmail.com"
+    };
+}
+
+<h1>@obj.Nome</h1>
